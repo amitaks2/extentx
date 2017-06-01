@@ -60,8 +60,11 @@ module.exports.connections = {
     adapter: 'sails-mongo',
     host: 'localhost', // host where MongoDB is running
     port: 27017, // port where MongoDB is running
+	//user: 'admin',
+    //password: 'admin',
     database: 'extent'
   },
+
 
   /***************************************************************************
   *                                                                          *
@@ -92,7 +95,7 @@ module.exports.connections = {
   mlabMongo:{
 	  
 		adapter:'sails-mongo',
-		url: 'mongodb://<dbuser>:admin:admin@ds155651.mlab.com:55651/extent'
+		url: 'mongodb://admin:admin@ds155651.mlab.com:55651/extent'
 	  
   }
 };
